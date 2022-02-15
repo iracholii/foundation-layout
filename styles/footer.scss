@@ -1,0 +1,228 @@
+@import 'variables.scss';
+
+.footer {
+  width: 100%;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+
+    @include for-large-down {
+      align-items: center;
+    }
+
+    @include for-large-up {
+      flex-direction: row;
+      padding-left: 130px;
+      padding-top: 44px;
+    }
+  }
+
+  &__description {
+    @include for-large-down {
+      display: none;
+    }
+
+    @include for-large-up {
+      width: 360px;
+      height: 85px;
+      margin-top: 26px;
+      margin-bottom: 25px;
+      line-height: 26px;
+      font-size: 18px;
+      color: $text-color-light-grey;
+    }
+  }
+}
+
+.footer .logo {
+  display: flex;
+  flex-direction: column;
+
+  @include for-large-up {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__image {
+    margin: 0;
+    margin-bottom: 20px;
+
+    @include for-large-up {
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    margin-bottom: 31px;
+    text-align: center;
+
+    @include for-large-up {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 222px;
+      height: 51px;
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+
+  &__name {
+    text-align: center;
+    color: $text-color-dark-grey;
+
+    @include for-large-up {
+      text-align: left;
+    }
+  }
+
+  &__description {
+    color: $text-color-light-grey;
+  }
+}
+
+.footer-downloads {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+
+  @include for-large-up {
+    height: 40px;
+    margin-bottom: 59px;
+  }
+
+  &__item {
+    @include for-large-up {
+      margin-right: 10px;
+    }
+  }
+}
+
+.footer__line-mobile {
+  width: 100%;
+  margin-bottom: 30px;
+  border-top: 1px solid $border-color-transparent-grey;
+
+  @include for-large-up {
+    display: none;
+  }
+}
+
+.additional-navigation {
+  display: flex;
+  flex-direction: column;
+
+  @include for-large-up {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 126px;
+    margin-top: 17px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    margin-bottom: 30px;
+
+    @include for-large-up {
+      width: 265px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    line-height: 28px;
+    font-size: 22px;
+    font-weight: 700;
+    color: $text-color-dark-grey;
+  }
+
+  &__list-item {
+    line-height: 30px;
+    font-size: 18px;
+    list-style-type: none;
+    text-decoration: none;
+    color: $text-color-light-grey;
+  }
+}
+
+.footer__line {
+  display: none;
+
+  @include for-large-up {
+    width: 100%;
+    display: block;
+    border-top: 1px solid $border-color-transparent-grey;
+  }
+}
+
+.terms {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  margin-bottom: 30px;
+
+  @include for-large-up {
+    margin-left: 130px;
+    margin-right: 861px;
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    line-height: 22px;
+    font-size: 14px;
+    text-decoration: none;
+    color: $text-color-light-grey;
+  }
+}
+
+.footer__bottom {
+  margin-left: 15px;
+
+  @include for-large-up {
+    display: flex;
+    margin-top: 13px;
+    margin-left: 0;
+  }
+}
+
+.social-links {
+  display: flex;
+  margin-right: 15px;
+  margin-bottom: 22px;
+
+  @include for-large-up {
+    margin: 0;
+  }
+
+  &__item {
+    margin-right: 20px;
+  }
+
+  &__item_twitter {
+    display: block;
+    width: 21px;
+    height: 16px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png);
+  }
+
+  &__item_facebook {
+    display: block;
+    width: 18px;
+    height: 17px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png);
+  }
+
+  &__item_linkedin {
+    display: block;
+    width: 18px;
+    height: 17px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png);
+  }
+}

@@ -1,0 +1,132 @@
+@import 'variables.scss';
+
+.audience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 50px 15px 35px 15px;
+  background-color: $background-color-light-blue;
+
+  @include for-large-up {
+    padding: 108px 131px 110px 130px;
+  }
+
+  &__subtitle {
+    margin: 0 0 17px 0;
+    line-height: 34px;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    color: $text-color-dark-grey;
+
+    @include for-large-up {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    line-height: 40px;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.3571428954601288px;
+    text-align: center;
+    color: $text-color-dark-grey;
+
+    @include for-large-up {
+      line-height: 56px;
+      font-size: 56px;
+      letter-spacing: -0.5px;
+      margin: 0 292px;
+    }
+  }
+
+  &__text {
+    margin: 18px 0 30px 0;
+    line-height: 34px;
+    font-size: 24px;
+    text-align: center;
+    color: $text-color-dark-grey;
+
+    @include for-large-up {
+      margin: 30px 292px 34px 292px;
+    }
+  }
+
+  &__buttons {
+    @include for-large-up {
+      display: flex;
+    }
+  }
+
+  &__button {
+    width: 290px;
+    background-color: $button-color-blue;
+    color: $text-color-white;
+
+    @include for-large-up {
+      width: 160px;
+      margin-bottom: 111px;
+    }
+
+    &_white {
+      margin: 12px 0 40px 0;
+      background-color: $button-color-white;
+      color: $text-color-black;
+
+      @include for-large-up {
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+
+  &__user-cards {
+    @include for-large-up {
+      display: flex;
+      gap: 30px;
+    }
+  }
+
+  &__user-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 290px;
+    height: 300px;
+    margin: 0 0 15px 0;
+    padding: 22px 0 33px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px 0px #0000000d, 0px 1px 3px 0px #0000001a,
+      0px 1px 0px 0px #ffffff1a inset;
+    background-blend-mode: overlay, normal;
+    background-color: $background-color-white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $hover-effect-color;
+    }
+
+    &:hover .audience__user-card-name {
+      color: $text-color-white;
+    }
+
+    @include for-large-up {
+      width: 262px;
+      margin: 0;
+    }
+  }
+
+  &__user-card-image {
+    height: 195px;
+  }
+
+  &__user-card-name {
+    margin-top: 22px;
+    line-height: 28px;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    color: $text-color-dark-grey;
+  }
+}

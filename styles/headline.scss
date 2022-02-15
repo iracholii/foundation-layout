@@ -1,0 +1,93 @@
+@import 'variables.scss';
+
+.headline {
+  width: 100%;
+  padding-top: 35px;
+
+  @include for-large-up {
+    width: 1140px;
+    margin: auto;
+    padding-bottom: 126px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px;
+
+    @include for-large-up {
+      position: absolute;
+      top: 177px;
+      align-items: flex-start;
+      width: 1250px;
+      z-index: 1;
+      padding: 0;
+    }
+  }
+
+  &__title {
+    line-height: 50px;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.3125px;
+    margin: 0;
+    color: $text-color-dark-grey;
+
+    @include for-large-up {
+      height: 165px;
+      width: 754px;
+      line-height: 78px;
+      font-size: 80px;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  &__paragraph {
+    margin: 24px 0 30px 0;
+    line-height: 34px;
+    font-size: 24px;
+    color: $text-color-dark-grey;
+    @include for-large-up {
+      height: 102px;
+      width: 456px;
+      margin: 34px 0 58px 0;
+    }
+  }
+
+  &__button {
+    width: 290px;
+    color: $text-color-white;
+    background-color: $button-color-blue;
+
+    @include for-large-up {
+      width: 160px;
+    }
+
+    &_white {
+      margin-top: 15px;
+      background-color: $button-color-white;
+      color: $text-color-blue;
+
+      @include for-large-up {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__banner {
+    max-width: 100%;
+    margin: 33px 0 36px 0;
+
+    @include for-large-up {
+      position: absolute;
+      height: 448px;
+      width: 796px;
+      top: 185px;
+      right: 25px;
+      margin: 0;
+      margin-bottom: 77px;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+@import 'variables.scss';
+
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 50px 15px;
+  background-color: $background-color-light-grey;
+
+  @include for-large-up {
+    flex-direction: row;
+    width: 1400px;
+    padding: 73px 0 72px 224px;
+  }
+
+  &__image {
+    max-width: 200px;
+
+    @include for-large-up {
+      max-width: 269px;
+      align-self: flex-start;
+      margin-right: 121px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 555px;
+  }
+
+  &__title {
+    margin: 0px;
+    margin-top: 40px;
+    line-height: 40px;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    text-align: center;
+    color: $text-color-dark-grey;
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: 18px;
+    line-height: 32px;
+    font-size: 22px;
+    color: $text-color-dark-grey;
+  }
+
+  &__registration {
+    @include for-large-up {
+      display: flex;
+      margin-top: 26px;
+    }
+  }
+
+  &__email {
+    width: 100%;
+    height: 48px;
+    margin-top: 40px;
+    border: 1px solid $border-color-grey;
+    border-radius: 2px;
+    outline: none;
+    text-align: center;
+
+    @include for-large-up {
+      margin-top: 0;
+    }
+
+    &::placeholder {
+      color: $text-color-dark-grey;
+      font-size: 18px;
+      line-height: 13px;
+
+      @include for-large-up {
+        text-align: left;
+        padding-left: 15px;
+      }
+    }
+  }
+
+  &__button {
+    width: 290px;
+    margin-top: 12px;
+    background-color: $button-color-blue;
+    color: $text-color-white;
+
+    @include for-large-up {
+      flex-shrink: 0;
+      width: 160px;
+      margin-top: 0;
+      margin-left: 10px;
+    }
+  }
+
+  &__terms {
+    margin: 10px 0 0 0;
+    line-height: 22px;
+    font-size: 14px;
+    color: $text-color-light-grey;
+  }
+}
