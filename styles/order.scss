@@ -11,7 +11,7 @@
   @include for-large-up {
     flex-direction: row;
     width: 1400px;
-    padding: 73px 0 72px 224px;
+    padding: 73px 0 72px 225px;
   }
 
   &__image {
@@ -39,6 +39,11 @@
     letter-spacing: -0.25px;
     text-align: center;
     color: $text-color-dark-grey;
+
+    @include for-large-up {
+      text-align: left;
+      margin-top: 0;
+    }
   }
 
   &__text {
@@ -75,7 +80,7 @@
       line-height: 13px;
 
       @include for-large-up {
-        text-align: left;
+        // text-align: left;
         padding-left: 15px;
       }
     }

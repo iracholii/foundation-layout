@@ -26,12 +26,9 @@ body {
 }
 
 .top-part {
-  height: 890px;
   background-color: $background-color-light-coral;
 
   @include for-large-up {
-    width: 1400px;
-    height: 710px;
     padding-top: 39px;
   }
 }
