@@ -372,7 +372,7 @@ html {
 }
 @media screen and (min-width: 1400px) {
   .headline {
-    width: 1249px;
+    width: 1140px;
     margin-left: 130px;
     margin-top: 76px;
   }
@@ -711,6 +711,7 @@ body {
 @media screen and (min-width: 1400px) {
   .top-part {
     padding-top: 39px;
+    height: 710px;
   }
 }
 
