@@ -12,7 +12,7 @@
     flex-direction: row;
     align-items: baseline;
     width: 1400px;
-    padding: 73px 0 72px 225px;
+    padding: 73px 0 72px 227px;
   }
 
   &__image {
@@ -43,7 +43,7 @@
 
     @include for-large-up {
       text-align: left;
-      margin-top: 33px;
+      margin-top: 43px;
     }
   }
 
@@ -53,6 +53,9 @@
     line-height: 32px;
     font-size: 22px;
     color: $text-color-dark-grey;
+    @include for-large-up {
+      padding-right: 44px;
+    }
   }
 
   &__registration {

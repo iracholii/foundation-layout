@@ -8,6 +8,7 @@ html {
 
 .header {
   display: flex;
+  align-items: center;
   width: 100%;
   height: 64px;
   background-color: #ffffff;
@@ -90,7 +91,7 @@ html {
   color: #2b292d;
 }
 .header .logo__description {
-  color: #807f81;
+  color: #7b6867;
 }
 @media screen and (max-width: 1399px) {
   .header .logo__description {
@@ -367,12 +368,13 @@ html {
 
 .headline {
   width: 100%;
-  padding-top: 35px;
+  margin-top: 35px;
 }
 @media screen and (min-width: 1400px) {
   .headline {
-    padding-left: 130px;
-    padding-top: 76px;
+    width: 1249px;
+    margin-left: 130px;
+    margin-top: 76px;
   }
 }
 .headline__content {
@@ -468,7 +470,7 @@ html {
     flex-direction: row;
     align-items: baseline;
     width: 1400px;
-    padding: 73px 0 72px 225px;
+    padding: 73px 0 72px 227px;
   }
 }
 .order__image {
@@ -499,7 +501,7 @@ html {
 @media screen and (min-width: 1400px) {
   .order__title {
     text-align: left;
-    margin-top: 33px;
+    margin-top: 43px;
   }
 }
 .order__text {
@@ -508,6 +510,11 @@ html {
   line-height: 32px;
   font-size: 22px;
   color: #2b292d;
+}
+@media screen and (min-width: 1400px) {
+  .order__text {
+    padding-right: 44px;
+  }
 }
 @media screen and (min-width: 1400px) {
   .order__registration {
