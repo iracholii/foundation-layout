@@ -49,7 +49,7 @@
 
     @include for-large-up {
       width: 456px;
-      margin: 34px 0 58px 0;
+      margin: 44px 0 58px 0;
     }
   }
 
@@ -71,7 +71,7 @@
       @include for-large-up {
         width: 158px;
         margin-top: 0;
-        margin-left: 10px;
+        margin-left: 8px;
       }
     }
   }
@@ -83,7 +83,7 @@
     @include for-large-up {
       position: absolute;
       width: 796px;
-      top: 185px;
+      top: 175px;
       right: 25px;
       margin: 0;
     }

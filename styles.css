@@ -417,7 +417,7 @@ html {
 @media screen and (min-width: 1400px) {
   .headline__paragraph {
     width: 456px;
-    margin: 34px 0 58px 0;
+    margin: 44px 0 58px 0;
   }
 }
 .headline__button {
@@ -440,7 +440,7 @@ html {
   .headline__button_white {
     width: 158px;
     margin-top: 0;
-    margin-left: 10px;
+    margin-left: 8px;
   }
 }
 .headline__banner {
@@ -451,7 +451,7 @@ html {
   .headline__banner {
     position: absolute;
     width: 796px;
-    top: 185px;
+    top: 175px;
     right: 25px;
     margin: 0;
   }
