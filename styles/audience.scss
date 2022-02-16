@@ -35,10 +35,10 @@
     color: $text-color-dark-grey;
 
     @include for-large-up {
+      margin: 0 292px;
       line-height: 56px;
       font-size: 56px;
       letter-spacing: -0.5px;
-      margin: 0 292px;
     }
   }
 

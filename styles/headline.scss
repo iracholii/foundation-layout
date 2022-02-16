@@ -18,8 +18,8 @@
     padding: 0 15px;
 
     @include for-large-up {
-      width: 754px;
       align-items: baseline;
+      width: 754px;
       padding: 0;
     }
   }

@@ -8,10 +8,10 @@ html {
 
 @import 'variables.scss';
 @import 'header.scss';
-@import 'footer.scss';
 @import 'headline.scss';
-@import 'order.scss';
 @import 'audience.scss';
+@import 'order.scss';
+@import 'footer.scss';
 
 body {
   width: 100%;
@@ -29,8 +29,8 @@ body {
   background-color: $background-color-light-coral;
 
   @include for-large-up {
-    padding-top: 39px;
     height: 710px;
+    padding-top: 39px;
   }
 }
 

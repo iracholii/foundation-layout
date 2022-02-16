@@ -27,10 +27,10 @@
     @include for-large-up {
       width: 360px;
       height: 85px;
-      margin-top: 26px;
-      margin-bottom: 25px;
       line-height: 26px;
       font-size: 18px;
+      margin-top: 26px;
+      margin-bottom: 25px;
       color: $text-color-light-grey;
     }
   }
@@ -46,12 +46,10 @@
   }
 
   &__image {
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
 
     @include for-large-up {
-      margin-right: 15px;
-      margin-bottom: 0;
+      margin: 0 15px 0 0;
     }
   }
 
@@ -119,8 +117,7 @@
   @include for-large-up {
     flex-direction: row;
     justify-content: flex-start;
-    margin-left: 126px;
-    margin-top: 17px;
+    margin: 17px 0 0 126px;
   }
 
   &__column {
@@ -136,10 +133,10 @@
   }
 
   &__title {
-    margin-bottom: 18px;
     line-height: 28px;
     font-size: 22px;
     font-weight: 700;
+    margin-bottom: 18px;
     color: $text-color-dark-grey;
   }
 
@@ -162,6 +159,15 @@
   }
 }
 
+.footer__bottom {
+  margin-left: 15px;
+
+  @include for-large-up {
+    display: flex;
+    margin: 13px 0 0 0;
+  }
+}
+
 .terms {
   display: flex;
   justify-content: space-between;
@@ -169,9 +175,7 @@
   margin-bottom: 30px;
 
   @include for-large-up {
-    margin-left: 130px;
-    margin-right: 861px;
-    margin-bottom: 15px;
+    margin: 0 861px 15px 130px;
   }
 
   &__link {
@@ -182,20 +186,9 @@
   }
 }
 
-.footer__bottom {
-  margin-left: 15px;
-
-  @include for-large-up {
-    display: flex;
-    margin-top: 13px;
-    margin-left: 0;
-  }
-}
-
 .social-links {
   display: flex;
-  margin-right: 15px;
-  margin-bottom: 22px;
+  margin: 0 15px 22px 0;
 
   @include for-large-up {
     margin: 0;
