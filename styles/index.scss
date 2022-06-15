@@ -1,3 +1,11 @@
+@import 'variables.scss';
+@import 'breakpoints.scss';
+@import 'header.scss';
+@import 'headline.scss';
+@import 'audience.scss';
+@import 'order.scss';
+@import 'footer.scss';
+
 * {
   box-sizing: border-box;
 }
@@ -5,13 +13,6 @@
 html {
   font-family: 'Work Sans', sans-serif;
 }
-
-@import 'variables.scss';
-@import 'header.scss';
-@import 'headline.scss';
-@import 'audience.scss';
-@import 'order.scss';
-@import 'footer.scss';
 
 body {
   width: 100%;

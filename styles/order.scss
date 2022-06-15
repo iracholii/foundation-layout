@@ -1,5 +1,3 @@
-@import 'variables.scss';
-
 .order {
   display: flex;
   flex-direction: column;
@@ -80,7 +78,7 @@
     }
 
     &::placeholder {
-      line-height: 13px;
+      line-height: 48px;
       font-size: 18px;
       color: $text-color-dark-grey;
 
